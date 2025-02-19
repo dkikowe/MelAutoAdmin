@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+#search-patient {
+  text-align: center;
+  margin-top: 20%;
+  transition: margin-top 0.5s ease;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#search-bar {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#search-button {
+  padding: 10px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#search-button i {
+  font-size: 20px;
+}
+
+#results {
+  display: none;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.result-card {
+  background: #f1f1f1;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#search-patient.top {
+  margin-top: 10%;
+}
+
+#results.visible {
+  display: block;
+  opacity: 1;
+}
